@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pNkPYO6NAc2ljqZ4KQtZAddPUxovDmmB0LV0hxBxcUs4SaaBTjayoh/5ZNzghBPIbtb7rV4baDj5VRA1AWuRZQ==",
+  "dgSpecHash": "LM2NPxbCTbtGIkM1SMkGp22A8YzkobR0xhkgoOzltYw3AmJABas4a+eWiTHbk6TcriG9UMKudIPDuRXWqS5F8g==",
   "success": true,
-  "projectFilePath": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\elecciones\\elecciones.csproj",
+  "projectFilePath": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\elecciones.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\47574710\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\47574710\\.nuget\\packages\\dapper\\2.0.138\\dapper.2.0.138.nupkg.sha512",
     "C:\\Users\\47574710\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\47574710\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\47574710\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
