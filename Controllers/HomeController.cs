@@ -15,50 +15,49 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        ViewBag listaPartidos = BD.ListarPartidos();
+        ViewBag.listaPartidos = BD.ListarPartidos();
         return View();
     }
 
     public IActionResult VerDetallePartido(int idPartido)
     {
-        ViewBag partido = BD.VerInfoPartido(idPartido);
-        ViewBag listaCandidatos = BD.ListarCandidatos(idPartido);
+        ViewBag.partido = BD.VerInfoPartido(idPartido);
+        ViewBag.listaCandidatos = BD.ListarCandidatos(idPartido);
         return View();
     }
 
     public IActionResult VerDetalleCandidato(int idCandidato)
     {
-        ViewBag candidato = BD.VerInfoCandidato(idCandidato);
+        ViewBag.candidato = BD.VerInfoCandidato(idCandidato);
         return View();
     }
 
      public IActionResult AgregarCandidato(int idPartido)
     {
-        ViewBag IdPartido = idPartido;
+        ViewBag.IdPartido = idPartido;
         return View();
     }
 
-    public IActionResult GuardarCandidato(Candidato can)
+    public IActionResult GuardarCandidato(Candidato can, int idPartido)
     {
         BD.AgregarCandidato(can);
-        ViewBag partido = BD.VerInfoPartido(idPartido);
-        ViewBag listaCandidatos = BD.ListarCandidatos(idPartido);
+        ViewBag.partido = BD.VerInfoPartido(idPartido);
+        ViewBag.listaCandidatos = BD.ListarCandidatos(idPartido);
         return View(VerDetallePartido);
     }
 
     public IActionResult EliminarCandidato(int idCandidato, int idPartido)
     {
         BD.EliminarCandidato(idCandidato);
-        ViewBag partido = BD.VerInfoPartido(idPartido);
-        ViewBag listaCandidatos = BD.ListarCandidatos(idPartido);
+        ViewBag.partido = BD.VerInfoPartido(idPartido);
+        ViewBag.listaCandidatos = BD.ListarCandidatos(idPartido);
         return View(VerDetallePartido);
     }
 
     public IActionResult Elecciones() 
     {
-        return View(infoElecciones);
+        return View();
     }
-    /* AGREGAR ESTAS VIEWS, NO ESTÁN EN LA CONSIGNA */
     public IActionResult Creditos() 
     {
         return View();
