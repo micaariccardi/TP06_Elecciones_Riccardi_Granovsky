@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Agregar Candidato";
+}
+
+<div class = "text-center">
+    Agregar Candidato
+</div>
+
+<form method = post action ='@Url.Action("GuardarCandidato")'>
+    <input type="hidden" name="IdPartido" value = "@ViewBag.IdPartido">
+    <br>
+    <p>Nombre: </p> <input type="text" name = "Nombre">
+    <br>
+    <p>Apellido: </p> <input type="text" name = "Apellido">
+    <br>
+    <p>Postulación: </p> <input type="text" name = "Postulacion">
+    <br>
+    <p>Link a la foto del candidato: </p> <input type="text" name = "Foto">
+    <br>
+    <p>Fecha de nacimiento: </p> <input type="date" name = "FechaNacimiento">
+    <input type = "submit" value = "Guardar">
+</form>

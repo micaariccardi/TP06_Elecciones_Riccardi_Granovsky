@@ -13,8 +13,44 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\wwwroot\\imagenes\\Thumbs.db",
+      "PackagePath": "staticwebassets\\imagenes\\Thumbs.db"
+    },
+    {
       "Id": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\wwwroot\\imagenes\\banderaArg.PNG",
       "PackagePath": "staticwebassets\\imagenes\\banderaArg.PNG"
+    },
+    {
+      "Id": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\wwwroot\\imagenes\\barbara.PNG",
+      "PackagePath": "staticwebassets\\imagenes\\barbara.PNG"
+    },
+    {
+      "Id": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\wwwroot\\imagenes\\barbie.PNG",
+      "PackagePath": "staticwebassets\\imagenes\\barbie.PNG"
+    },
+    {
+      "Id": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\wwwroot\\imagenes\\barney.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\barney.jpg"
+    },
+    {
+      "Id": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\wwwroot\\imagenes\\kira.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\kira.jpg"
+    },
+    {
+      "Id": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\wwwroot\\imagenes\\nino.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\nino.jpg"
+    },
+    {
+      "Id": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\wwwroot\\imagenes\\pet.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\pet.jpg"
+    },
+    {
+      "Id": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\wwwroot\\imagenes\\rawr.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\rawr.jpg"
+    },
+    {
+      "Id": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\wwwroot\\imagenes\\rocky.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\rocky.jpg"
     },
     {
       "Id": "Z:\\2023\\Programación\\TP06_Elecciones_Riccardi_Granovsky\\wwwroot\\js\\site.js",

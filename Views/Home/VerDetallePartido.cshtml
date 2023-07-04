@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class = "text-center">
+    @ViewBag.Partido.Nombre
+</div>
+
+<br>
+
+    <div class="row">
+        @foreach (Candidato can in ViewBag.listaCandidatos)
+        {
+            <div class="col-md-4 col-12">
+                <div class = "card">
+                    <img src = "/imagenes/@can.Foto">
+                    <div class = "container">
+                        <h4><b>@can.Nombre</b></h4> 
+                        <br>
+                        <a href='@Url.Action("VerDetalleCandidato", new {idCandidato=can.IdCandidato})'>Ver Más</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <br>
+    <a href='@Url.Action("AgregarCandidato", new {idPartido=ViewBag.Partido.IdPartido})'>Agregar Candidato</a>

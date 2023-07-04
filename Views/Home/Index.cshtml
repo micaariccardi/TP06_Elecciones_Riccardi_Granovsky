@@ -1,8 +1,25 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Partidos";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class = "text-center">
+    Partidos
 </div>
+
+<br>
+
+    <div class="row">
+        @foreach (Partido par in ViewBag.listaPartidos)
+        {
+            <div class="col-md-4 col-12">
+                <div class = "card">
+                    <img src = "/imagenes/@par.Logo">
+                    <div class = "container">
+                        <h4><b>@par.Nombre</b></h4> 
+                        <br>
+                        <a href='@Url.Action("VerDetallePartido", new {idPartido=par.IdPartido})'>Ver Más</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
