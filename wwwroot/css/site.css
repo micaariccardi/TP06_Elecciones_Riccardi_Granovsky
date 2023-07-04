@@ -19,14 +19,24 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: aliceblue;
+}
+
+.text-center
+{
+  font-size: 2em;
 }
 
 /*cards*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 60%;
+  width: 100%;
   text-align: center;
+}
+
+.card img{
+  height: 25em;
 }
 
 .card:hover {
@@ -37,15 +47,15 @@ body {
   padding: 2px 16px;
 }
 
-/*ver info del candidato*/
+/*ver info del candidato y del partido*/
 
-.foto_candidato {
+.foto {
     width: 50em;
     float: left;
     margin-right: 0.5em;
 }
 
-.info_candidato {
+.info {
     margin-top: 5em;
     font-size: 1.5em;
 }

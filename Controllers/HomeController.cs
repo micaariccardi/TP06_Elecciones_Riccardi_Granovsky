@@ -43,7 +43,7 @@ public class HomeController : Controller
         BD.AgregarCandidato(can);
         ViewBag.partido = BD.VerInfoPartido(idPartido);
         ViewBag.listaCandidatos = BD.ListarCandidatos(idPartido);
-        return View(VerDetallePartido);
+        return View("VerDetallePartido");
     }
 
     public IActionResult EliminarCandidato(int idCandidato, int idPartido)
@@ -51,7 +51,7 @@ public class HomeController : Controller
         BD.EliminarCandidato(idCandidato);
         ViewBag.partido = BD.VerInfoPartido(idPartido);
         ViewBag.listaCandidatos = BD.ListarCandidatos(idPartido);
-        return View(VerDetallePartido);
+        return View("VerDetallePartido");
     }
 
     public IActionResult Elecciones() 

@@ -6,14 +6,23 @@
     @ViewBag.Partido.Nombre
 </div>
 
-<br>
+<div class="row"> 
+    <img class="foto" src="@ViewBag.Partido.Logo">
+    
+    <div class="col-md-4 col-12">
+        <h3 class="info"><u>Sitio Web</u>: @ViewBag.Partido.SitioWeb</h3>
+        <h3 class="info"><u>Fecha de fundación</u>: @ViewBag.Partido.FechaFundacion</h3>
+        <h3 class="info"><u>Cantidad de diputados</u>: @ViewBag.Partido.CantidadDiputados</h3> 
+        <h3 class="info"><u>Cantidad de senadores</u>: @ViewBag.Partido.CantidadSenadores</h3> 
+    </div>
+</div>
 
     <div class="row">
         @foreach (Candidato can in ViewBag.listaCandidatos)
         {
             <div class="col-md-4 col-12">
                 <div class = "card">
-                    <img src = "/imagenes/@can.Foto">
+                    <img src = "@can.Foto">
                     <div class = "container">
                         <h4><b>@can.Nombre</b></h4> 
                         <br>
@@ -25,4 +34,4 @@
     </div>
 
     <br>
-    <a href='@Url.Action("AgregarCandidato", new {idPartido=ViewBag.Partido.IdPartido})'>Agregar Candidato</a>
+    <a href='@Url.Action("AgregarCandidato", new {idPartido=ViewBag.Partido.IdPartido})'>Agregar candidato</a>

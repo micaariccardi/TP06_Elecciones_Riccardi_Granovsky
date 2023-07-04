@@ -1,6 +1,9 @@
- <img class="foto_candidato" src="/imagenes/@ViewBag.candidato.Foto">
+ <img class="foto" src="@ViewBag.candidato.Foto">
     
     
-<h3 class="info_candidato"><u>Nombre</u>: @ViewBag.Candidato.Apellido @ViewBag.Candidato.Nombre</h3>
-<h3 class="info_candidato"><u>Fecha de Nacimiento</u>: @ViewBag.Candidato.FechaNacimiento</h3>
-<h3 class="info_candidato"><u>Postulación</u>: @ViewBag.Candidato.Postulacion</h3> 
+<h3 class="info"><u>Nombre</u>: @ViewBag.Candidato.Nombre @ViewBag.Candidato.Apellido</h3>
+<h3 class="info"><u>Fecha de Nacimiento</u>: @ViewBag.Candidato.FechaNacimiento</h3>
+<h3 class="info"><u>Postulación</u>: @ViewBag.Candidato.Postulacion</h3> 
+
+<br>
+<a href='@Url.Action("EliminarCandidato", new {idCandidato=ViewBag.Candidato.IdCandidato, idPartido=ViewBag.Candidato.IdPartido})'>Eliminar candidato</a>
